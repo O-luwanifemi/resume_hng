@@ -39,7 +39,7 @@ export const sendMail = async (sender, email, message) => {
       subject: `${sender}: From Your Portfolio`,
       text: `${message}`,
       html: `<p>${message}</p>`,
-      replyTo: `${email}`,
+      replyTo: `${email}`
     };
 
     const response = await transport.sendMail(mailOptions);
