@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/CSS/main.css" type="text/css">
+    <title>Resume | KOR</title>
+  </head>
+
+  <body>
+    <!-- HEADER SECTION -->
+    <%- include('Partials/header.ejs') %>
+    
+    <main>
+      <!-- HERO IMG, TEXT, AND CTA -->
+      <%- include('Partials/hero.ejs') %>
+    
+      <!-- ABOUT ME SECTION -->
+      <%- include('Partials/aboutSection.ejs') %>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <%- include('Partials/footer.ejs') %>
+    
+
+
+    <!-- SCROLL UP BUTTON -->
+    <a href="#main" class="up-btn">
+        <img src="Images/arrow-up-circle.svg" alt="arrow up button">
+    </a>
+    
+
+
+
+    <!-- TYPED JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <!-- WOW JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- JQUERY -->
+    <script>
+      var typed = new Typed('.typer', {
+        strings: [
+          'and I actualize ideas with codes.',
+          'and I build responsive web apps.',
+          'and I build neat UIs',
+          'and I solve life problems.',
+          'and I make users happy.'
+        ],
+        typeSpeed: 60,
+        backSpeed: 30,
+        smartBackspace: false,
+        backDelay: 1000,
+        loop: true,
+        loopCount: Infinity,
+      });
+    </script>
+  </body>
+
+</html>

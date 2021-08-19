@@ -1,0 +1,1201 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: .625rem;
+}
+
+*,
+*::before,
+*::after,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.78rem;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  background-color: rgba(82, 82, 55, 0.981);
+  color: hsl(0deg, 0%, 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.main_header {
+  height: 42vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100vw !important;
+}
+
+.header_content_parent {
+  width: 80% !important;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 3em;
+}
+
+/* BRAND SIDE */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand .logo {
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  border: 2px solid rgb(114, 114, 208);
+  background-color: rgba(0, 0, 0, 0.857);
+  border-radius: 50%;
+  color: aqua;
+  z-index: 1 !important;
+}
+
+.brand .brand_name {
+  color: burlywood;
+  background-color: rgba(0, 0, 0, 0.857);
+  line-height: 2;
+  padding: 2px 16px;
+  margin-left: -1rem;
+  border-radius: 4px;
+}
+
+/* HEADER NAV */
+nav > .nav-list {
+  display: flex;
+}
+
+nav .nav-list > li {
+  margin-right: 2.5em;
+}
+
+nav .nav-list .active {
+  padding-bottom: .3em;
+  border-bottom: 2px solid burlywood;
+}
+
+nav .nav-list li > a,
+nav .nav-list li > a:link,
+nav .nav-list li > a:focus,
+nav .nav-list li > a:visited {
+  display: inline-block;
+  color: hsl(0deg, 0%, 100%);
+  transition: all .35s ease-in-out;
+}
+
+nav .nav-list li > a:hover {
+  padding-bottom: .3em;
+  border-bottom: 2px solid burlywood;
+}
+
+
+/* SECOND ROW IN THE HEADER -- THE CLIP-PATH DIV */
+.clip-path-parent {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+.clip-path {
+  fill: hsl(210deg, 30%, 8%);
+  overflow-x: hidden !important;
+}
+
+
+/* MAIN BODY OF THE PAGE */
+main {
+  max-width: 100vw !important;
+  height: auto;
+  margin-top: -8px;
+  padding-bottom: 6em;
+  background-color: hsl(210deg, 30%, 8%);
+}
+
+#hero {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta {
+  word-spacing: .1em;
+  line-height: 2.5;
+  font-size: 1.72rem;
+}
+
+.cta > h1 {
+  font-size: 5rem;
+  letter-spacing: .15em;
+  color: rgb(94, 106, 211);
+}
+
+.btns {
+  margin-top: 1.5em;
+}
+
+.btns > a,
+.btns > a:link,
+.btns > a:focus,
+.btns > a:visited {
+  color: hsl(0deg, 0%, 100%);
+  background-color: transparent;
+  border: 2px solid burlywood;
+  padding: 11px 20px;
+  border-radius: 6px;
+}
+
+.btns > a:hover {
+  border: 2px solid rgb(94, 106, 211);
+  color: silver;
+}
+
+.btns > a:first-child {
+  margin-right: 5px;
+}
+
+.btns > a:nth-child(2) {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#hero > figure {
+  margin-right: -4em;
+  width: 53%;
+  opacity: .5;
+}
+
+
+
+/* ABOUT SECTION */
+.about_start {
+  text-align: justify;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 2;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.about_start > h2 {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3rem;
+  border-bottom: 2px solid burlywood;
+}
+
+.about_start > p {
+  margin-top: 1.5em;
+}
+
+.skills {
+  margin: 5em 0;
+}
+
+.cards {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  margin-top: .4em;
+}
+
+.cards > figure {
+  width: 6%;
+}
+
+.cards > figure:not(:last-child) {
+  margin-right: .7em;
+}
+
+
+/* PORTFOLIO SECTION */
+#portfolio {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+#portfolio > h2 {
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-style: italic;
+  word-spacing: .3em;
+  padding-bottom: .3em;
+  border-bottom: 2px solid burlywood;
+}
+
+.projects_brief {
+  display: flex;
+  align-items: center;
+  margin-top: .5em;
+}
+
+.projects_brief > a {
+  width: 30em;
+  height: 11.3em;
+  margin-top: 1.5em;
+  position: relative;
+}
+
+.projects_brief > a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.projects_brief a > img {
+  height: 100%; 
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* PROJECT CARDS IMG OVERLAY */
+.projects_brief a > .img-overlay {
+  width: 103%;
+  height: 105%;
+  border-radius: 5px;
+  line-height: 12;
+  position: absolute;
+  top: -5px;
+  left: -4px;
+  background-color: #dc3546e5;
+  display: none;
+}
+
+.img-overlay > h4 {
+  color: burlywood;
+  text-align: center;
+}
+
+.projects_brief a:hover > .img-overlay {
+  display: block;
+}
+
+
+/* FOOTER SECTION */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em 0;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* -- CONTACT AND SM PAGES -- */
+.left-right-parent {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -- Contact form box -- */
+.left {
+  width: 60%;
+}
+
+.left .text {
+  line-height: 2;
+}
+
+.left .text > h3 {
+  text-align: center;
+}
+
+.left .text > p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 2em;
+  color: rgba(255, 255, 255, 0.624);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.344);
+}
+
+form {
+  margin-top: 1.2em;
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputs .left {
+  width: 45%;
+}
+
+.inputs .center {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.inputs .right {
+  width: 100%;
+}
+
+.inputs label {
+  font-size: 1.3rem;
+  color: burlywood;
+}
+
+#name,
+#email,
+#message {
+  border: none;
+  outline: none;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+  border-bottom: 3px solid burlywood;
+  background-color: transparent;
+  width: 100%;
+  max-width: 100%;
+  color: hsl(0deg, 0%, 100%);
+  padding: 0 0 5px 0;
+  min-height: 2.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#name, #email {
+  padding-bottom: 15px;
+}
+
+#message {
+  resize: none;
+}
+
+form > .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: .5em;
+}
+
+form .btn > button {
+  outline: none;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 100%);
+  border: 2px solid burlywood;
+  width: 30%;
+  padding: 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+form .btn > button:hover {
+  border: 2px solid rgb(94, 106, 211);
+  color: silver;
+  cursor: pointer;
+}
+
+
+/* -- Social Media pages -- */
+.right > p {
+  color: burlywood;
+  font-size: 1.3rem;
+  line-height: 4;
+  text-align: center;
+}
+
+.sms {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sms a {
+  width: 30px;
+}
+
+.sms a:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sms a > img {
+  width: 100%;
+}
+
+
+/* -- Copyright line -- */
+footer > p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.748);
+  margin-top: 6em;
+}
+
+
+
+/* BUTTON UP SECTION */
+.up-btn {
+  width: 40px;
+  height: 40px; 
+  padding: 5px; 
+  border-radius: 50%;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(82, 82, 55, 0.981);
+}
+
+.up-btn > img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* <----- MEDIA QUERIES -----> */
+
+/* - MD - min-width: 768px - */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 1.67rem;
+  }
+
+  .main_header {
+    height: 42vh;
+  }
+
+  .header_content_parent {
+    width: 90% !important;
+    display: block;
+  }
+
+
+  /* BRAND SIDE */
+  .brand .logo {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .brand .brand_name {
+    padding: 2px 10px 2px 14px;
+    margin-left: -1rem;
+    border-radius: 4px;
+  }
+
+
+  /* HEADER NAV */
+  nav {
+    margin-top: 2.6em;
+  }
+
+  nav > .nav-list {
+    justify-content: center;
+  }
+
+  nav .nav-list > li {
+    margin-right: 0;
+  }
+
+  nav .nav-list > li:not(:last-child) {
+    margin-right: 5em;
+  }
+
+
+  /* SECOND ROW IN THE HEADER -- THE CLIP-PATH DIV */
+  .clip-path {
+    position: relative;
+    top: 0px;
+    left: -250px;
+  }
+
+
+  /* MAIN BODY OF THE PAGE */
+   main {
+     max-width: 100vw !important;
+     overflow-x: hidden !important;
+   }
+
+  #hero {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .cta {
+    word-spacing: 0;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .cta > h1 {
+    font-size: 4.2rem;
+    letter-spacing: .2em;
+    margin-bottom: 0;
+  }
+  
+  .btns > a,
+  .btns > a:link,
+  .btns > a:focus,
+  .btns > a:visited {
+    color: hsl(0deg, 0%, 100%);
+    background-color: transparent;
+    border: 2px solid burlywood;
+    padding: 11px 12px;
+    border-radius: 6px;
+    font-size: 1.4rem;
+  }
+  
+  .btns > a:nth-child(2) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  /* ILLUSTRATOR IMG */
+  #hero > figure {
+    position: relative;
+    top: -130px;
+    right: -300px;
+    width: 80%;
+    opacity: .3;
+    overflow-x: hidden !important;
+  }
+
+
+  /* ABOUT SECTION */
+  .about_start {
+    text-align: center;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .about_start > h2 {
+    width: 20%;
+    font-size: 2.5rem;
+  }
+
+  .cards {
+    width: 50%;
+  }
+
+  .cards > figure {
+    width: 10%;
+  }
+
+
+  /* PORTFOLIO SECTION */
+  #portfolio {
+    width: 90%;
+  }
+
+  #portfolio > h2 {
+    width: 35%;
+    font-size: 2.5rem;
+    word-spacing: .1em;
+  }
+
+  .projects_brief {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 3em;
+  }
+
+  .projects_brief > a {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  /* PROJECT CARDS IMG OVERLAY */
+  .projects_brief a:hover > .img-overlay {
+    display: none;
+  }
+
+  
+  /* FOOTER SECTION */
+
+  /* -- CONTACT AND SM PAGES -- */
+  .left-right-parent {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* -- Contact form box -- */
+  .left {
+    width: 65%;
+  }
+  
+  .inputs {
+    display: block;
+  }
+  
+  .inputs .left {
+    width: 55%;
+  }
+
+  .inputs .center {
+    width: 55%;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  
+  .inputs .right {
+    width: 100%;
+  }
+  
+  #name, #email {
+    padding-bottom: 15px;
+  }
+
+  form > .btn {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  form .btn > button {
+    width: 100%;
+  }
+  
+
+  /* -- Social Media pages -- */
+
+  .sms a {
+    width: 20px;
+  }
+
+  .sms a:not(:last-child) {
+    margin-right: 25px;
+  }
+
+
+  /* -- Copyright line -- */
+  footer > p {
+    font-size: 1.35rem;
+  }
+}
+
+
+
+/* - SM - max-width: 767px - */
+@media (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 1.55rem;
+  }
+
+  .main_header {
+    height: 42vh;
+  }
+
+  .header_content_parent {
+    width: 90% !important;
+    display: block;
+  }
+
+
+  /* BRAND SIDE */
+  .brand .logo {
+    width: 45px;
+    height: 45px;
+    padding: 9px;
+  }
+
+  .brand .brand_name {
+    padding: 1px 10px 1px 14px;
+    margin-left: -1rem;
+    border-radius: 4px;
+  }
+
+
+  /* HEADER NAV */
+  nav {
+    margin-top: 2.5em;
+  }
+
+  nav > .nav-list {
+    justify-content: center;
+  }
+
+  nav .nav-list > li {
+    margin-right: 0;
+  }
+
+  nav .nav-list > li:not(:last-child) {
+    margin-right: 4em;
+  }
+
+
+  /* SECOND ROW IN THE HEADER -- THE CLIP-PATH DIV */
+  .clip-path {
+    position: relative;
+    top: 0px;
+    left: -700px;
+  }
+
+
+  /* MAIN BODY OF THE PAGE */
+   main {
+     max-width: 100vw !important;
+     overflow-x: hidden !important;
+   }
+
+  #hero {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .cta {
+    word-spacing: 0;
+    font-size: 1.55rem;
+    text-align: center;
+  }
+  
+  .cta > h1 {
+    font-size: 3.9rem;
+    letter-spacing: .2em;
+    margin-bottom: 0;
+  }
+  
+  .btns > a,
+  .btns > a:link,
+  .btns > a:focus,
+  .btns > a:visited {
+    color: hsl(0deg, 0%, 100%);
+    background-color: transparent;
+    border: 2px solid burlywood;
+    padding: 11px 12px;
+    border-radius: 6px;
+  }
+  
+  .btns > a:nth-child(2) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  /* ILLUSTRATOR IMG */
+  #hero > figure {
+    position: relative;
+    top: -50px;
+    right: -250px;
+    width: 70%;
+    opacity: .3;
+    overflow-x: hidden !important;
+  }
+
+
+  /* ABOUT SECTION */
+  .about_start {
+    text-align: center;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .about_start > h2 {
+    width: 20%;
+    font-size: 2.4rem;
+  }
+
+  .cards {
+    width: 50%;
+  }
+
+  .cards > figure {
+    width: 10%;
+  }
+
+
+  /* PORTFOLIO SECTION */
+  #portfolio {
+    width: 90%;
+  }
+
+  #portfolio > h2 {
+    width: 40%;
+    font-size: 2.4rem;
+    word-spacing: .1em;
+  }
+
+  .projects_brief {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 2em;
+  }
+
+  .projects_brief > a {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  /* PROJECT CARDS IMG OVERLAY */
+  .projects_brief a:hover > .img-overlay {
+    display: none;
+  }
+
+
+  
+  /* FOOTER SECTION */
+
+  /* -- CONTACT AND SM PAGES -- */
+  .left-right-parent {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* -- Contact form box -- */
+  .left {
+    width: 65%;
+  }
+  
+  .inputs {
+    display: block;
+  }
+  
+  .inputs .left {
+    width: 55%;
+  }
+
+  .inputs .center {
+    width: 55%;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  
+  .inputs .right {
+    width: 100%;
+  }
+  
+  #name, #email {
+    padding-bottom: 15px;
+  }
+
+  form > .btn {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  form .btn > button {
+    width: 100%;
+  }
+  
+
+  /* -- Social Media pages -- */
+
+  .sms a {
+    width: 20px;
+  }
+
+  .sms a:not(:last-child) {
+    margin-right: 25px;
+  }
+
+
+  /* -- Copyright line -- */
+  footer > p {
+    font-size: 1.35rem;
+  }
+
+
+  /* Button up */
+  .up-btn {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+
+
+
+/* - XS - max-width: 575px - */
+@media (max-width: 575px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .main_header {
+    height: 32vh;
+  }
+
+  .header_content_parent {
+    width: 90% !important;
+    display: block;
+  }
+
+
+  /* BRAND SIDE */
+  .brand .logo {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .brand .brand_name {
+    padding: 0 10px 0 14px;
+    margin-left: -1rem;
+    border-radius: 4px;
+  }
+
+
+  /* HEADER NAV */
+  nav {
+    margin-top: 2em;
+  }
+
+  nav > .nav-list {
+    justify-content: center;
+  }
+
+  nav .nav-list > li {
+    margin-right: 0;
+  }
+
+  nav .nav-list > li:not(:last-child) {
+    margin-right: 3em;
+  }
+
+
+  /* SECOND ROW IN THE HEADER -- THE CLIP-PATH DIV */
+  .clip-path-parent {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  .clip-path {
+    position: relative;
+    top: 30px;
+    left: -300px;
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+
+  /* MAIN BODY OF THE PAGE */
+   main {
+     max-width: 100vw !important;
+     overflow-x: hidden !important;
+   }
+
+  #hero {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .cta {
+    word-spacing: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 250px;
+  }
+  
+  .cta > h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2em;
+    margin-bottom: 0;
+  }
+
+  .cta > p.strings {
+    height: 24%;
+  }
+  
+  .btns > a,
+  .btns > a:link,
+  .btns > a:focus,
+  .btns > a:visited {
+    color: hsl(0deg, 0%, 100%);
+    background-color: transparent;
+    border: 2px solid burlywood;
+    padding: 11px 10px;
+    border-radius: 6px;
+    font-size: 1.4rem;
+  }
+  
+  .btns > a:nth-child(2) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  /* ILLUSTRATOR IMG */
+  #hero > figure {
+    position: relative;
+    top: -50px;
+    right: -180px;
+    width: 83%;
+    opacity: .3;
+    overflow-x: hidden !important;
+  }
+
+
+  /* ABOUT SECTION */
+  .about_start {
+    text-align: center;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .about_start > h2 {
+    width: 25%;
+    font-size: 2.3rem;
+  }
+
+  .cards {
+    width: 50%;
+  }
+
+  .cards > figure {
+    width: 10%;
+  }
+
+
+  /* PORTFOLIO SECTION */
+  #portfolio {
+    width: 90%;
+  }
+
+  #portfolio > h2 {
+    width: 50%;
+    font-size: 2.3rem;
+    word-spacing: .1em;
+  }
+
+  .projects_brief {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 2em;
+  }
+
+  .projects_brief > a {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  /* PROJECT CARDS IMG OVERLAY */
+  .projects_brief a:hover > .img-overlay {
+    display: none;
+  }
+
+
+  
+  /* FOOTER SECTION */
+
+  /* -- CONTACT AND SM PAGES -- */
+  .left-right-parent {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* -- Contact form box -- */
+  .left {
+    width: 60%;
+  }
+  
+  .inputs {
+    display: block;
+  }
+  
+  .inputs .left {
+    width: 75%;
+  }
+
+  .inputs .center {
+    width: 75%;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  
+  .inputs .right {
+    width: 100%;
+  }
+  
+  #name, #email {
+    padding-bottom: 15px;
+  }
+
+  form > .btn {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  form .btn > button {
+    width: 100%;
+  }
+  
+
+  /* -- Social Media pages -- */
+
+  .sms a {
+    width: 18px;
+  }
+
+  .sms a:not(:last-child) {
+    margin-right: 25px;
+  }
+
+
+  /* -- Copyright line -- */
+  footer > p {
+    font-size: 1.3rem;
+  }
+
+
+  /* Button up */
+  .up-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
