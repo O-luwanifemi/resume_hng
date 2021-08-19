@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";
 import { google } from "googleapis";
+import { emailTemplate } from "./emailTemplate.js";
 
 dotenv.config();
 
@@ -21,7 +22,7 @@ export const sendMail = async (sender, email, message) => {
   try {
     const accessToken = await oAuth2Client.getAccessToken();
 
-    const transport = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         type: "oAuth2",
@@ -34,15 +35,14 @@ export const sendMail = async (sender, email, message) => {
     });
 
     const mailOptions = {
-      from: `${email}`,
+      from: sender + " " + email,
       to: process.env.PRIMARY_EMAIL,
-      subject: `${sender}: From Your Portfolio`,
-      text: `${message}`,
-      html: `<p>${message}</p>`,
-      replyTo: `${email}`
+      subject: `${sender}: From Your Website`,
+      html: await emailTemplate(email, message),
+      replyTo: email,
     };
 
-    const response = await transport.sendMail(mailOptions);
+    const response = await transporter.sendMail(mailOptions);
     return response;
   } catch (error) {
     return error;

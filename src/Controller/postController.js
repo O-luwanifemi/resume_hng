@@ -18,19 +18,29 @@ const postController = {
       // If user doesn't already exist, create message, and send mail
       if (!user) {
         const mailerFeedback = await sendMail(sender, email, message);
-        console.log("MAILER: ", mailerFeedback);
-        if(mailerFeedback) {"await User.create({ sender, email, message });";
-          return response(res, 200, "Thank you for reaching out, your message has been sent.");
-        }
+        
+        if (Object.keys(mailerFeedback).length) {
+          await User.create({ sender, email, message });
+
+          return response(
+            res, 200, "Thank you for reaching out, your message has been sent."
+          );
+        } else throw new Error();
       }
       
       // If user exists, push to found user's message array, and send mail
       user.message.push(message);
-      await User.findByIdAndUpdate(
-        { _id: user._id }, { message: user.message }, { new: true }
-      );
 
-      return response(res, 200, "Thank you for reaching out, your message has been sent.");
+      const mailerFeedback = await sendMail(sender, email, message);
+
+      if (Object.keys(mailerFeedback).length) {
+        await User.findByIdAndUpdate(
+          { _id: user._id },
+          { message: user.message }
+        );
+
+        return response(res, 200, "Thank you for reaching out, your message has been sent.");
+      } else throw new Error();
     } catch (error) {
       return response(res, 500, error.message, error);
     }
