@@ -1,1 +1,3 @@
-# A mini resume/portfolio app with special emphasis on the "contact me" section at the foot of the page.
+# https://o-luwanifemi.herokuapp.com/
+
+# Kareem Oluwaseun Rashid is a budding full-stack software engineer with tremendous passion for technology, creating value, proferring solutions, and continous development. As a MERN stack software engineer, with eyes set on adding even more stacks, I specialize in developing, and sometimes designing with Figma and AdobeXD, clean, well-commented, and scalable digital products, whilst adhering strictly to best industry practices.
