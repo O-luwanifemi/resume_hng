@@ -1,20 +1,23 @@
 {
-  "name": "resume",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "A resume having a contact form",
+  "description": "Kareem Oluwaseun Rashid is a budding full-stack software engineer with tremendous passion for technology, creating value, proferring solutions, and continous development. As a MERN stack software engineer, with eyes set on adding even more stacks, I specialize in developing, and sometimes designing with Figma and AdobeXD, clean, well-commented, and scalable digital products, whilst adhering strictly to best industry practices.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [
-    "hng",
-    "zuri",
-    "hng internship",
-    "hng resume project",
-    "hng resume task",
-    "hng backend task",
-    "hng backend project"
+    "kareem",
+    "kareem rashid oluwaseun",
+    "O-luwanifemi",
+    "oluwanifemi rashid",
+    "oluwanifemi",
+    "kareem oluwanifemi",
+    "kareem's portfolio",
+    "kareem dev",
+    "o-luwanifemi dev",
+    "o-luwanifemi's portfolio"
   ],
   "author": "O-luwanifemi",
   "license": "ISC",
